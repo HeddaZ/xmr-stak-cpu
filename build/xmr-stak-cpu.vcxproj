@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D126BF4-763D-3852-B557-61C99C5188FF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>xmr-stak-cpu</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xmr-stak-cpu.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xmr-stak-cpu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xmr-stak-cpu.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xmr-stak-cpu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xmr-stak-cpu.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xmr-stak-cpu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xmr-stak-cpu.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xmr-stak-cpu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;Debug\xmr-stak-c.lib;..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/CPP/xmr-stak-cpu/build/bin/Debug/xmr-stak-cpu.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/CPP/xmr-stak-cpu/build/bin/Debug/xmr-stak-cpu.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;Release\xmr-stak-c.lib;..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/CPP/xmr-stak-cpu/build/bin/Release/xmr-stak-cpu.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/CPP/xmr-stak-cpu/build/bin/Release/xmr-stak-cpu.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;MinSizeRel\xmr-stak-c.lib;..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/CPP/xmr-stak-cpu/build/bin/MinSizeRel/xmr-stak-cpu.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/CPP/xmr-stak-cpu/build/bin/MinSizeRel/xmr-stak-cpu.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\CPP\xmr-stak-cpu\libs\libmicrohttpd\include;D:\Workspace\CPP\xmr-stak-cpu\libs\openssl\include;D:\Workspace\CPP\xmr-stak-cpu\libs\hwloc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;RelWithDebInfo\xmr-stak-c.lib;..\libs\libmicrohttpd\lib\libmicrohttpd.lib;..\libs\openssl\lib\ssleay32.lib;..\libs\openssl\lib\libeay32.lib;..\libs\hwloc\lib\libhwloc.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/CPP/xmr-stak-cpu/build/bin/RelWithDebInfo/xmr-stak-cpu.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/CPP/xmr-stak-cpu/build/bin/RelWithDebInfo/xmr-stak-cpu.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\cmake\bin\cmake.exe -HD:/Workspace/CPP/xmr-stak-cpu -BD:/Workspace/CPP/xmr-stak-cpu/build --check-stamp-file D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-Determine-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\Internal\FeatureTesting.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\feature_tests.cxx;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\FindThreads.cmake;C:\cmake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\cmake\share\cmake-3.10\Modules\FindOpenSSL.cmake;C:\cmake\share\cmake-3.10\Modules\SelectLibraryConfigurations.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\cmake\bin\cmake.exe -HD:/Workspace/CPP/xmr-stak-cpu -BD:/Workspace/CPP/xmr-stak-cpu/build --check-stamp-file D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-Determine-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\Internal\FeatureTesting.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\feature_tests.cxx;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\FindThreads.cmake;C:\cmake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\cmake\share\cmake-3.10\Modules\FindOpenSSL.cmake;C:\cmake\share\cmake-3.10\Modules\SelectLibraryConfigurations.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\cmake\bin\cmake.exe -HD:/Workspace/CPP/xmr-stak-cpu -BD:/Workspace/CPP/xmr-stak-cpu/build --check-stamp-file D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-Determine-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\Internal\FeatureTesting.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\feature_tests.cxx;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\FindThreads.cmake;C:\cmake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\cmake\share\cmake-3.10\Modules\FindOpenSSL.cmake;C:\cmake\share\cmake-3.10\Modules\SelectLibraryConfigurations.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\cmake\bin\cmake.exe -HD:/Workspace/CPP/xmr-stak-cpu -BD:/Workspace/CPP/xmr-stak-cpu/build --check-stamp-file D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Workspace/CPP/xmr-stak-cpu/CMakeLists.txt;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-Determine-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp;C:\cmake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake\share\cmake-3.10\Modules\Internal\FeatureTesting.cmake;C:\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\feature_tests.cxx;C:\cmake\share\cmake-3.10\Modules\CMakeCXXCompiler.cmake.in;D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\cmake\share\cmake-3.10\Modules\FindThreads.cmake;C:\cmake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;C:\cmake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\cmake\share\cmake-3.10\Modules\FindOpenSSL.cmake;C:\cmake\share\cmake-3.10\Modules\SelectLibraryConfigurations.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\Workspace\CPP\xmr-stak-cpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Workspace\CPP\xmr-stak-cpu\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\cli-miner.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\console.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\executor.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\httpd.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\jconf.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\jpsock.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\minethd.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\socket.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\webdesign.cpp"  />
+    <ClCompile Include="D:\Workspace\CPP\xmr-stak-cpu\crypto\cryptonight_common.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Workspace\CPP\xmr-stak-cpu\build\ZERO_CHECK.vcxproj">
+      <Project>{15CABE56-3A5C-3404-8C56-37863B5D0C3E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Workspace\CPP\xmr-stak-cpu\build\xmr-stak-c.vcxproj">
+      <Project>{1531E7A3-D779-3A1F-9AA0-90545F0E9643}</Project>
+      <Name>xmr-stak-c</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

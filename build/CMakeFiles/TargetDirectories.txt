@@ -1,0 +1,5 @@
+D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/INSTALL.dir
+D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/xmr-stak-c.dir
+D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/xmr-stak-cpu.dir
+D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/ALL_BUILD.dir
+D:/Workspace/CPP/xmr-stak-cpu/build/CMakeFiles/ZERO_CHECK.dir
