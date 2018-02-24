@@ -1,6 +1,3 @@
-bin/
-obj/
-build/
 xmr-stak-cpu.layout
 xmr-stak-cpu.depend
 config-debug.txt
@@ -13,3 +10,8 @@ config-debug.txt
 
 # merge original backup files
 *.orig
+
+# others
+.vs/
+*.db
+*.opendb
