@@ -15,3 +15,7 @@ config-debug.txt
 .vs/
 *.db
 *.opendb
+build/
+!build/*.vcxproj
+!build/*.sln
+!build/*.depend
